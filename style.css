@@ -1,0 +1,139 @@
+.head-banner {
+    /*
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(13,13,82,1) 25%, rgba(12,54,93,1) 48%, rgba(1,62,99,1) 100%);*/
+    background: rgb(141,214,176);
+    background: linear-gradient(90deg, rgba(141,214,176,1) 0%, rgba(214,181,120,1) 100%); 
+    background-size: 200% 200%; /* Increase the background size to create smooth animation */
+    animation: gradient 15s ease infinite;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+
+
+.head-banner > *{
+    color: white;
+}
+.head-banner > p{
+    font-size: 25px;
+}
+
+
+.Name{
+    font-size: 60px;
+    font-family: 'Great Vibes';
+}
+.Name>span{
+    color: #71468A;
+}
+
+.Description{
+    font-size: 40px;
+}
+
+.Description>span{
+    color: #71468A;
+}
+.about-me{
+    /*background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+    /*background: rgb(43,44,50);
+    background: linear-gradient(90deg, rgba(43,44,50,1) 2%, rgba(66,75,136,1) 27%, rgba(60,75,176,1) 53%, rgba(67,52,150,1) 100%); */
+    background-color: #eeecc1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.about-me>p{
+    width: 80%;
+    font-size: 30px;
+    color: #71468A;
+}
+.about-me>img{
+    border-radius: 50%;
+}
+
+.skills{
+    height: 700px;
+    background: rgb(111,196,152);
+    background: linear-gradient(90deg, rgba(111,196,152,1) 0%, rgba(186,228,206,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer{
+    height: 150px;
+    background: rgb(199,170,116);
+    background: linear-gradient(90deg, rgba(199,170,116,1) 0%, rgba(219,197,154,1) 100%); 
+    width: 100%;
+}
+
+.card-body h2{
+    color: #71468A;
+    font-weight: bold;
+}
+
+
+.card-body p{
+    font-size: 20px;
+}
+
+
+
+
+
+@media (max-width:800px) {
+    .about-me>p{
+        width: 80%;
+        font-size: 15px;
+        color: #71468A;
+    }
+    .skills{
+        flex-direction: column;
+        height: 1400px;
+    }
+    .card{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .Name{
+        font-size: 50px;
+    }
+    .Description{
+        font-size: 30px;
+    }
+    
+}
