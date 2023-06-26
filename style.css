@@ -109,6 +109,8 @@
     padding: 10px;
     margin-top: 40px;
     margin-bottom: 40px;
+    width: 25rem;
+    height: auto;
 }
 
 .footer{
@@ -140,12 +142,15 @@
     .skills{
         height: auto;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
     }
-    .card{
-        margin-right: 0px;
-        margin-left: 0px;
-        flex-basis: 25%;
-    }
+    .card {
+        margin: 10px;
+        flex-basis: calc(100% - 20px);
+        width: auto;
+      }
 
     .Name{
         font-size: 45px;
