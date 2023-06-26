@@ -1,5 +1,5 @@
 .skills{
-    padding: 100px;
+    padding: 30px;
     height: auto;
     background: rgb(111,196,152);
     background: linear-gradient(90deg, rgba(111,196,152,1) 0%, rgba(186,228,206,1) 100%);
@@ -54,12 +54,17 @@
     .skills{
         height: auto;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
     }
-    .card{
-        margin-right: 0px;
-        margin-left: 0px;
-        flex-basis: 25%;
-    }
+    .card {
+        width: 100%;
+        margin:0;
+        margin-bottom: 10px;
+        flex-basis: auto;
+      }
 
     
 }
